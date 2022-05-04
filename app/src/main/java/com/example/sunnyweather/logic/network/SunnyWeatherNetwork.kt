@@ -30,7 +30,7 @@ object SunnyWeatherNetwork {
                     if (body != null) continuation.resume(body)
                     /**如果获得数据，调用resume方法让协程恢复执行*/
                     else continuation.resumeWithException(
-                        RuntimeException("resonse body is null")
+                        RuntimeException("response body is null")
                     )
                 }
 

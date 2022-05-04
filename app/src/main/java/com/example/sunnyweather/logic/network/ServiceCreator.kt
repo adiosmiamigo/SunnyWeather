@@ -5,7 +5,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 /**Retrofit构建器，可取使用placeService服务*/
 object ServiceCreator {
-    private const val BASE_URL="https://api.caiyunapp.com"
+    private const val BASE_URL = "https://api.caiyunapp.com/"
+
     //指定所有请求的根路径
     private val retrofit=Retrofit.Builder()
         .baseUrl(BASE_URL)
